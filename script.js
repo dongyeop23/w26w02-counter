@@ -15,8 +15,10 @@ incBtn.addEventListener("click", () => {
 });
 
 decBtn.addEventListener("click", () => {
-  count--;
-  render();
+  if (count > 0) {
+    count--;
+    render();
+  }
 });
 
 resetBtn.addEventListener("click", () => {
